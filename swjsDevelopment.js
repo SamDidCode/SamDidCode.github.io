@@ -1,4 +1,5 @@
 var css = function(a) {
+  var brbz = 0;
   //check if a is an array
     if (typeof(a) == "object") {
       let id = "";
@@ -14,6 +15,7 @@ var css = function(a) {
               throw new Error(`Uh-oh! We think that ${id} is not a valid id! Here is the error message: ${e}`);
               return;
             }
+            brbz = brbz + 1;
             continue;
           } else {
             //more error handling
@@ -110,6 +112,7 @@ var css = function(a) {
             throw new Error(`\n\r\nThe problem value: \n\r\n ${a[i]} \n\r\n Uh-oh! We didn't understand what you wrote at position ${i} in your array.`);
         }
       }
+      return `Change style of ${brbz} items`;
     } else {
       //just some more error handling
       var str = "                     ";
