@@ -98,6 +98,14 @@ var css = function(a) {
               return;
             }
             break;
+           case "display":
+            if (id != "") {
+              document.getElementById(id).style.display = param;
+            } else {
+              throw new Error("You must enter an id before changing the style.")
+              return;
+            }
+            break;
           default:
             throw new Error(`\n\r\nThe problem value: \n\r\n ${a[i]} \n\r\n Uh-oh! We didn't understand what you wrote at position ${i} in your array.`);
         }
