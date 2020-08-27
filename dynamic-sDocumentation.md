@@ -1,0 +1,8 @@
+# Welcome to dynamic-s.js!
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thank you for looking at dynamic-s.js (dynamic-style.js)! This library allows you to write CSS within JS! Continue reading for documentation.
+## Implementation and Syntax:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To implement dynamic-s, simply download the file and use a script tag to run it: <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<script src="dynamic-s.js"></script>`<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In any script tags after this, you will be able to use dynamic-s! Let's begin on the syntax. First, create a new object inside of a script tag (this script tag must be *after* the implementation of dynamic-s): <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`var myObject = new Object("your_id_here")` <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Make sure you input a valid ID! It can strat with or without a #. Now, you can start being stylistic! Here's the syntax:<br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`myObject.style.color("#ff00ff");`<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This changes the color of the object with the id you provided pink! You can have as many objects as you want, but you can also do `myObject.id.set("new_id")`. Finally, if you ever want to check what id you have, simply use `myObject.id.value`.
+### Currently Supported Style Changes:
+The styles color, height, width, fontSize, fontFamily, textAlign, position, padding, display, and margin are currently supported by dynamic-s.
+## Errors:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The only intended errors in dynamic-s are related to not being able to locate an id. If any other errors occur, please submit an issue. Thanks for reading!
